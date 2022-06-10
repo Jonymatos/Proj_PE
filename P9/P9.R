@@ -10,7 +10,7 @@ dados <- data.frame(matrix(ncol=2, nrow=0))
 colnames(dados)<-c("Dimensao","MA")
 dados[] <- lapply(dados, as.numeric)
 
-count = 0
+count = 1
 for (n in dimensoes){
   buffer <- vector("double", amostras)
   for (m in c(1:amostras)){
