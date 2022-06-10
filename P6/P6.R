@@ -4,7 +4,7 @@ library(patchwork)
 
 processa<-function(n){
   dados <- data.frame(matrix(ncol=2, nrow=0))
-  colnames(dados)<-c("Amostra_Media","Variancia")
+  colnames(dados)<-c("Amostra_Media")
   dados[] <- lapply(dados, as.numeric)
   for (i in c(1:1010)){
     amostra <- runif(n, 9, 13)
