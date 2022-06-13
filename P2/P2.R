@@ -3,6 +3,7 @@ library(openxlsx)
 library(dplyr, warn.conflicts = FALSE)
 library(tidyr)
 
+#O ficheiro EsperancaVida.xlsx não foi alteradado
 df <- read.xlsx("EsperancaVida.xlsx", sheet = 1, startRow = 9, sep.names=" ")
 df <- df[df$X1 %in% c(2002:2019), ]
 df <- df[, (colnames(df) %in% c("X1", "EE - Estónia", "LU - Luxemburgo", "SE - Suécia"))]
